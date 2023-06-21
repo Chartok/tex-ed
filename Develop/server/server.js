@@ -1,11 +1,12 @@
-const express = require('express');
+import express, { static, urlencoded, json } from 'express';
+express.static(root, [options]);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static('../client/dist'));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(static('../client/dist'));
+app.use(urlencoded({ extended: true }));
+app.use(json());
 
 require('./routes/htmlRoutes')(app);
 
