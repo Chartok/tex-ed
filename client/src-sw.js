@@ -48,7 +48,7 @@ import { CacheFirst } from 'workbox-strategies';
 import { registerRoute } from 'workbox-routing';
 import { CacheableResponsePlugin } from 'workbox-cacheable-response';
 import { ExpirationPlugin } from 'workbox-expiration';
-import { precacheAndRoute } from 'workbox-precaching/precacheAndRoute';
+import { precacheAndRoute } from 'workbox-precaching/precacheAndRoute.js';
 
 precacheAndRoute(self.__WB_MANIFEST);
 
