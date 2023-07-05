@@ -29,6 +29,8 @@
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
     "nodemon": "^2.0.4",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
     "webpack-pwa-manifest": "^4.3.0",
     "workbox-webpack-plugin": "^7.0.0"
   }

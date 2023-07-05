@@ -86,7 +86,7 @@ export default () => {
     },
     plugins: [
       new CleanWebpackPlugin(),
-      new HtmlWebpackPlugin({ template: './src/index.html' }),
+      new HtmlWebpackPlugin({ template: './client/index.html' }),
       new WebpackPwaManifest({
         /* manifest config */
         name: 'Just Another Text Editor',
