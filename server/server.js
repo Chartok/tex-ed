@@ -14,6 +14,7 @@ app.use(express.static(join(__dirname, '../client/dist')));
 app.use(urlencoded({ extended: true }));
 app.use(json());
 
+console.log('Setting up routes...');
 htmlRoutes(app);
 
 app.listen(PORT, () => { 
