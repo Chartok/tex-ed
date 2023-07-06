@@ -75,7 +75,7 @@ const __dirname = path.resolve();
 
 export default () => {
   return {
-    mode: 'development',
+    mode: 'production',
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
@@ -102,7 +102,7 @@ export default () => {
           },
         ],
       }),
-      new InjectManifest({ swSrc: '/src-sw.js', swDest: 'sw.js' }),
+      new InjectManifest({ swSrc: './src-sw.js', swDest: 'sw.js' }),
       new MiniCssExtractPlugin(),
     ],
     module: {
