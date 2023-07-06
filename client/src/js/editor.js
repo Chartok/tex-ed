@@ -1,4 +1,3 @@
-const CodeMirror = require('codemirror');
 const { getDb, putDb } = require('./database.js');
 const { header } = require('./header.js');
 

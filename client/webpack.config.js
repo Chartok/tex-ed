@@ -6,8 +6,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BabelLoaderExcludeNodeModulesExcept = require('babel-loader-exclude-node-modules-except');
 
-const __dirname = path.resolve();
-
 module.exports = async () => {
   try {
     return {
@@ -22,7 +20,7 @@ module.exports = async () => {
       },
       plugins: [
         new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin({ template: './src/index.html' }),
+        new HtmlWebpackPlugin({ template: './index.html' }),
         new WebpackPwaManifest({
           /* manifwebpacest config */
           name: 'Just Another Text Editor',
