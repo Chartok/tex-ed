@@ -1,11 +1,8 @@
 const express = require('express');
 const { urlencoded, json } = require('express');
-const { fileURLToPath } = require('url');
-const { dirname, join } = require('path');
+const { join } = require('path');
 const htmlRoutes = require('./routes/htmlRoutes.js');
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
