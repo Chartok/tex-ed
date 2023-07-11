@@ -21,7 +21,7 @@ const initServiceWorker = async () => {
       ],
     });
 
-    await warmStrategyCache({
+    warmStrategyCache({
     urls: ['/index.html', '/'],
     strategy: pageCache,
     });
